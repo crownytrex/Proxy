@@ -9,7 +9,5 @@ app.use((req, res) => {
   bare.handleRequest(req, res);
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`✅ UV Proxy running on port ${port}`);
-});
+// ✅ Instead of app.listen(), export the app
+module.exports = app;
