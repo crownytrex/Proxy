@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "ultraviolet/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "ultraviolet/index.js"
+    }
+  ]
+}
